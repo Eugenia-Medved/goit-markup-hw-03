@@ -1,0 +1,187 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #000000;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
+/* Global style */
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer {
+  background-color: #2f303a;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.logo {
+  color: var(--title-text-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+.logo-studio-white {
+  color: var(--primary-white-color);
+}
+
+/* Active */
+
+.link:hover,
+.link:focus,
+.link.current,
+.address-nav-link:hover,
+.address-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.hero {
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+}
+
+.hero-button,
+.button-subscribe {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.advanteges-svg {
+  background-color: #f5f4fa;
+}
+
+.link {
+  color: var(--title-text-color);
+  font-weight: 500;
+}
+
+.address-nav-link {
+  color: var(--primary-text-color);
+}
+
+.title-advantages {
+  color: var(--title-text-color);
+}
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.name {
+  text-transform: none;
+}
+
+.footer-title {
+  color: var(--primary-white-color);
+  text-align: center;
+}
+
+.section-whot-do-we-text {
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--primary-white-color);
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.address_map {
+  color: var(--primary-white-color);
+}
+
+.last-text {
+  color: var(--primary-text-color);
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Portfolio */
+.portfolio-title {
+  display: none;
+}
+
+.button-portfolio {
+  border-color: #f5f4fa;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.button-portfolio.current,
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.portfolio-caption {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.portfolio-kind {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.portfolio-text-about {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  font-size: 18px;
+  line-height: 1.6;
+}
