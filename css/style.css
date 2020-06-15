@@ -6,6 +6,17 @@
 }
 
 /* Global style */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #ffffff;
   color: var(--primary-text-color);
@@ -36,6 +47,14 @@ h3 {
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px 0 15px;
+  outline: 2px solid tomato;
 }
 
 .logo {
@@ -80,11 +99,19 @@ h3 {
 
 .hero-button,
 .button-subscribe {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
+  text-align: center;
 }
 
 .advanteges-svg {
