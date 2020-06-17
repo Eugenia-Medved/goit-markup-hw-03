@@ -36,17 +36,16 @@ a {
 
 ul {
   list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 footer {
   background-color: #2f303a;
 }
 
-h1 {
-  padding: 0;
-  margin: 0;
-}
-
+h1,
 h2 {
   padding: 0;
   margin: 0;
@@ -71,27 +70,45 @@ section {
 }
 
 /* Flex container */
-.container {
+.container,
+.container-advantages,
+.container-whot-do-we,
+.container-team,
+.container-customers,
+.container-footer {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  padding: 0 15px 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 2px solid tomato;
 }
-
-.box-advantages {
-  display: flex;
+.container-footer {
+  padding-top: 45px;
 }
 
-.box-whot-do-we {
-  display: flex;
-}
-
+.box-advantages,
+.box-whot-do-we,
+.box-team,
 .list-icon {
   display: flex;
+  justify-content: space-around;
 }
 
-.box-team {
+.fooret-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-list-footer {
+  display: flex;
+}
+
+.box-subscribe {
   display: flex;
 }
 
@@ -184,6 +201,19 @@ section {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+  padding-bottom: 50px;
+}
+.section-team {
+  background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.box-team > li {
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .name {
@@ -193,6 +223,18 @@ section {
 .footer-title {
   color: var(--primary-white-color);
   text-align: center;
+}
+.address-footer a {
+  display: block;
+}
+
+input {
+  width: 358px;
+  height: 50px;
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .section-whot-do-we-text {
