@@ -69,6 +69,10 @@ section {
   margin-bottom: 94px;
 }
 
+p {
+  margin: 0;
+}
+
 /* Flex container */
 .container,
 .container-advantages,
@@ -85,6 +89,7 @@ section {
 }
 .container-footer {
   padding-top: 45px;
+  padding-bottom: 21px;
 }
 
 .box-advantages,
@@ -98,6 +103,7 @@ section {
 .fooret-box {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .social-list {
@@ -222,7 +228,8 @@ section {
 
 .footer-title {
   color: var(--primary-white-color);
-  text-align: center;
+  text-align: left;
+  margin-bottom: 20px;
 }
 .address-footer a {
   display: block;
@@ -235,6 +242,7 @@ input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-right: 12px;
 }
 
 .section-whot-do-we-text {
@@ -258,9 +266,12 @@ input {
 }
 
 .last-text {
-  color: var(--primary-text-color);
+  color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
   text-align: center;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 28px;
 }
 
 /* Portfolio */
