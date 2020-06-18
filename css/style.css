@@ -79,17 +79,35 @@ p {
 .container-whot-do-we,
 .container-team,
 .container-customers,
-.container-footer {
+.container-footer,
+.container-portfolio {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 .container-footer {
   padding-top: 45px;
   padding-bottom: 21px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav-item + .site-nav-item {
+  margin-left: 50px;
+}
+
+.address-nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .box-advantages,
@@ -97,21 +115,23 @@ p {
 .box-team,
 .list-icon {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .fooret-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .social-list {
   display: flex;
+  justify-content: center;
 }
 
 .social-list-footer {
   display: flex;
+  justify-content: center;
 }
 
 .box-subscribe {
@@ -119,12 +139,17 @@ p {
 }
 
 .logo {
+  margin-right: 85px;
   color: var(--title-text-color);
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
+}
+
+.fooret-box .logo {
+  margin-top: 9px;
 }
 
 .logo-web {
@@ -179,17 +204,35 @@ p {
   text-align: center;
 }
 
-.advanteges-svg {
-  background-color: #f5f4fa;
+.box-advantages-item {
   width: 270px;
-  height: 120px;
+}
+
+.advanteges-svg {
   border-radius: 4px;
   margin-bottom: 30px;
+  padding: 25px 100px;
+  background-color: #f5f4fa;
+}
+
+.advanteges-svg img {
+  display: block;
 }
 
 .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 500;
+}
+
+.address-nav-link + .address-nav-link {
+  margin-left: 30px;
+}
+
+.address-nav {
+  margin-left: auto;
 }
 
 .address-nav-link {
@@ -215,7 +258,8 @@ p {
   padding-bottom: 94px;
 }
 
-.box-team > li {
+.box-whot-do-we-item {
+  width: 370px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -223,7 +267,14 @@ p {
 }
 
 .name {
+  margin-top: 30px;
   text-transform: none;
+}
+
+.team-text {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-title {
@@ -246,11 +297,21 @@ input {
 }
 
 .section-whot-do-we-text {
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: rgba(47, 48, 58, 0.8);
   color: var(--primary-white-color);
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+}
+
+.box-team-item {
+  width: 270px;
+  padding-bottom: 24px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .name {
@@ -279,12 +340,35 @@ input {
   display: none;
 }
 
+.container-portfolio {
+  padding-top: 93px;
+  padding-bottom: 93px;
+}
+
+.portfolio-button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .button-portfolio {
-  border-color: #f5f4fa;
+  padding: 6px 22px;
+  background-color: #f5f4fa;
+  border: 1px solid transparent;
   color: var(--title-text-color);
+  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+}
+
+.button-portfolio + .button-portfolio {
+  margin-left: 8px;
 }
 
 .button-portfolio.current,
@@ -292,6 +376,24 @@ input {
 .button-portfolio:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+}
+
+.portfolio-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.portfolio-text {
+  padding: 20px 24px;
 }
 
 .portfolio-caption {
@@ -302,11 +404,13 @@ input {
 }
 
 .portfolio-kind {
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.9;
 }
 
 .portfolio-text-about {
+  padding: 63px 24px;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   font-size: 18px;
